@@ -1,0 +1,398 @@
+body
+{
+    margin: 0;
+    padding: 2px;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%); 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+nav
+{
+    height: 6em;
+    width: 100%;
+    background: rgb(2,0,36);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: sticky;
+    top:0%;
+    z-index: 1;
+}
+
+#Logo-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+#fav
+{
+    margin:20px;
+}
+#name-and-logo
+{
+    display: flex;
+}
+
+#name-and-logo img, #nav-right img
+{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+#nav-right
+{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+#Search
+{
+    margin:10px;
+    background-color: rgba(75, 74, 95, 0.63);
+    border-radius: 1rem;
+    padding: 2px 7px;
+}
+
+#Search input
+{
+    padding:5px 20px;
+    border: 0px solid transparent;
+    background-color: transparent;
+    color: white;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+/* Nav end */
+
+/* main body */
+
+main
+{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+#section-container, .sec-head
+{
+    width: 70%;
+    display: block;
+    margin-right: 2%;
+}
+
+section
+{
+    margin-bottom:60px ;
+}
+
+/* Genre Sectinon */
+
+#genre
+{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.gcard
+{
+    width: 30%;
+    margin: 1%;
+}
+
+.options
+{
+    align-items: top;
+    display: flex;
+    flex-direction: column;
+}
+
+.gcard img
+{
+    width: 100%;
+    overflow: hidden;
+    max-width: fit-content;
+    height: 100%;
+    opacity: 70%;
+    transition: transform 0.8s;
+}
+
+.gcard img:hover
+{
+    transform: scale(1.1);
+}
+
+/*Genre section end / latest release start*/
+
+#latest-release
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.lrcard
+{
+    width:45%;
+    margin:2%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    align-items: top;
+}
+
+.song-info img
+{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.song-info :hover .play .pause
+{ 
+    opacity: 50%;
+    color: white;
+}
+
+.pause, .play
+{
+    transition: all 0.5 ease-in-out;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.song-info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#PA-content
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Artist-Profile
+{
+    width:14%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Artist-Profile img
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: none;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#mood
+{
+    background-color: rgb(29, 22, 121);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px 15px 10px;
+}
+
+#collection
+{
+    width: 14%;
+    background-color: orange;
+    margin: 2% 1%;
+}
+
+#coll1
+{
+    background-color: yellow;
+    width: 85%;
+    margin: auto;
+    height: 130%;
+    margin-top: -10px;
+    border: 1px solid yellow;
+}
+
+#coll2
+{
+    background-color: red;
+    width: 85%;
+    margin: auto;
+    height: 120%;
+    margin-top: -8px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.cdimg
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.MContent
+{
+    width: 11%;
+}
+
+.MContent img
+{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#discover
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+#Engsongs, #hindiSongs
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.EContent, .HContent
+{
+    width:14%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.EContent img, .HContent img
+{
+    width: 100%;
+    height: 100%;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: darkgrey;
+    height: 5em;
+}
+
+#footer-left, #footer-right
+{
+    width: 20%;
+    display: flex;
+    font-size: 0.9em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-center
+{
+    display:flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#timeline
+{
+    width: 90%;
+    height: 2px;
+    background-color: grey;
+    margin-top: 20px;
+}
+
+#volume-timeline
+{
+    width: 20%;
+    background-color: white;
+    height: 2px;
+    margin-left: -16px;
+}
+
+
+#footer-left img
+{
+    width: 80px;
+    height: 80px;
+}
+
+/* Aside */
+
+aside
+{
+    width:22%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7em;
+    margin: 2%;
+}
+
+.acard img
+{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.acard
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.heart
+{
+    display: flex;
+    align-items: center;
+}
+/* General Classes */
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.mr20
+{
+    margin-right: 20px;
+}
+
